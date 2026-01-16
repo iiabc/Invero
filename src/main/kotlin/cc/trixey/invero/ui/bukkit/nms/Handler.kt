@@ -62,7 +62,7 @@ fun BukkitWindow.updateTitle(title: String, updateInventory: Boolean = true) {
 
     // 补刀
     submitAsync(delay = 2L) {
-        if (viewer.notViewingWindow() && player.openInventory.topInventory.type == InventoryType.CRAFTING) {
+        if (viewer.notViewingWindow() && isViewingCrafting(player)) {
             handler.sendWindowClose(player, id)
         }
     }
@@ -72,6 +72,17 @@ fun BukkitWindow.updateTitle(title: String, updateInventory: Boolean = true) {
 
 fun Player.sendCancelCoursor() {
     handler.sendWindowSetSlot(this, -1, -1, null, 1)
+}
+
+private fun isViewingCrafting(player: Player): Boolean {
+    return try {
+        val view = player.javaClass.getMethod("getOpenInventory").invoke(player)
+        val topInv = view.javaClass.getMethod("getTopInventory").invoke(view)
+        val type = topInv.javaClass.getMethod("getType").invoke(topInv) as InventoryType
+        type == InventoryType.CRAFTING
+    } catch (_: Throwable) {
+        false
+    }
 }
 
 internal fun Player.postPacket(packet: Any, vararg fields: Pair<String, Any?>) = packet.apply {

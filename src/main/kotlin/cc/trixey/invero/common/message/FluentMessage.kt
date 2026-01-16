@@ -7,7 +7,6 @@ import taboolib.common.platform.function.adaptPlayer
 import taboolib.module.chat.HexColor
 import taboolib.module.chat.Source
 import taboolib.module.chat.component
-import taboolib.module.chat.impl.AdventureComponent
 import taboolib.module.nms.MinecraftVersion
 import taboolib.platform.compat.replacePlaceholder
 
@@ -58,7 +57,7 @@ fun String.sendFormattedAdventureComponent(player: Player, variables: Map<String
 
     val component = Message.parseAdventure(processed)
 
-    Message.bukkitAudiences.player(player).sendMessage(component)
+    component.sendTo(adaptPlayer(player))
 }
 
 /**

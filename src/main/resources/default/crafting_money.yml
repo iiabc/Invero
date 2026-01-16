@@ -11,19 +11,19 @@ title:
   mode: reversable
   period: 5
   values:
-  - '<gradient:#d8dc50:#aedc50>金_'
-  - '<gradient:#d8dc50:#aedc50>金币_'
-  - '<gradient:#d8dc50:#aedc50>金币铸_'
-  - '<gradient:#d8dc50:#aedc50>金币铸造_'
-  - '<gradient:#d8dc50:#aedc50>金币铸造师_'
-  - '<gradient:#d8dc50:#aedc50>金币铸造师'
-  - '<gradient:#d8dc50:#aedc50>金币铸造师_'
-  - '<gradient:#d8dc50:#aedc50>金币铸造师'
-  - '<gradient:#d8dc50:#aedc50>金币铸造_'
-  - '<gradient:#d8dc50:#aedc50>金币铸_'
-  - '<gradient:#d8dc50:#aedc50>金币_'
-  - '<gradient:#d8dc50:#aedc50>金_'
-  - '<gradient:#d8dc50:#aedc50>_'
+  - '&{#d8dc50}金_'
+  - '&{#d8dc50}金币_'
+  - '&{#d8dc50}金币铸_'
+  - '&{#d8dc50}金币铸造_'
+  - '&{#d8dc50}金币铸造师_'
+  - '&{#d8dc50}金币铸造师'
+  - '&{#d8dc50}金币铸造师_'
+  - '&{#d8dc50}金币铸造师'
+  - '&{#d8dc50}金币铸造_'
+  - '&{#d8dc50}金币铸_'
+  - '&{#d8dc50}金币_'
+  - '&{#d8dc50}金_'
+  - '&{#d8dc50}_'
 
 layout: '-# #*#a#-'
 

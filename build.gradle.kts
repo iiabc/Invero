@@ -69,13 +69,6 @@ dependencies {
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.9.0")
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.9.0")
 
-    // Adventure API - 使用更兼容的版本以支持更广泛的 MC 版本
-    compileOnly("net.kyori:adventure-api:4.24.0")
-    compileOnly("net.kyori:adventure-text-minimessage:4.24.0")
-    compileOnly("net.kyori:adventure-text-serializer-gson:4.24.0")
-    compileOnly("net.kyori:adventure-text-serializer-legacy:4.24.0")
-    compileOnly("net.kyori:adventure-platform-bukkit:4.4.1")
-
     // Minecraft Core
     compileOnly("ink.ptms.core:v12105:12105:mapped")
     compileOnly("ink.ptms.core:v12105:12105:universal")

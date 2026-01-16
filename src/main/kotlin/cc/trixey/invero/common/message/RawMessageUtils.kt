@@ -1,7 +1,6 @@
 package cc.trixey.invero.common.message
 
 import org.bukkit.inventory.meta.ItemMeta
-import taboolib.module.chat.impl.AdventureComponent
 import taboolib.module.nms.MinecraftVersion
 import taboolib.module.nms.setDisplayNameComponent
 import taboolib.module.nms.setLoreComponents
@@ -14,10 +13,10 @@ import taboolib.module.nms.setLoreComponents
  */
 
 /**
- * 文本转 [AdventureComponent]
+ * 文本转 [taboolib.module.chat.ComponentText]
  * @see Message.parseAdventure
  */
-fun String.componentAdventure(): AdventureComponent = AdventureComponent(Message.parseAdventure(this))
+fun String.componentAdventure() = Message.parseAdventure(this)
 
 /**
  * 向 [ItemMeta] 中写入 [lore] (提供跨版本支持)

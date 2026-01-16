@@ -1,4 +1,4 @@
-title: 'Sounds <black>[{{page get}}/{{page max}}]'
+title: 'Sounds &0[{{page get}}/{{page max}}]'
 
 layout: |-
   ####*####
@@ -41,11 +41,11 @@ generator:
     ]
   output:
     material: book
-    name: '<green><bold>{{&element_name}} <gray>#{{element ordinal}}'
+    name: '&a&l{{&element_name}} &7#{{element ordinal}}'
     lore: |-
       &r
       &8· &fVolume: 1
-      &8· &fPitch: <green>{{&pitch}}
+      &8· &fPitch: &a{{&pitch}}
       &r
       &b→ &3Press &b1~9 &3to adjust & preview
       &b→ &3Press &bMiddle &3to copy its name
@@ -65,8 +65,8 @@ generator:
       number_key_8: 'context set pitch to 8'
       number_key_9: 'context set pitch to 9'
       middle: |-
-        msg "<dark_gray>..."
-        msg "<bold><gold>[Pitch: <yellow>{{&pitch}}<gold>] <u><green><click:suggest_command:'sound {{&element_name}} by 1 {{&pitch}}'><hover:show_text:'<green>Click to copy'>{{&element_name}}</hover></click>"
+        msg "&8..."
+        msg "&l&6[Pitch: &e{{&pitch}}&6] &n&a[{{&element_name}}](suggest=sound {{&element_name}} by 1 {{&pitch}};hover=&aClick to copy)"
       def: |-
         sound &element_name by 1 &pitch
         context set last_previewed to &element_name
@@ -75,7 +75,7 @@ generator:
 icons:
   '*':
     material: sign
-    name: '<gold>Elements Filter'
+    name: '&6Elements Filter'
     lore: |-
       &r
       &7Filter: &e{{&filter}}
@@ -114,31 +114,31 @@ icons:
       right: context del filter regenerate icons refresh menu title update
   '#':
     material: black stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
   '|':
     material: gray stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
 
   '>':
     material: black stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
     lore: '{{page current}} / {{page max}}'
     sub:
       - if: not page isLast
         material: lime stained glass pane
-        name: '<green>Next page →'
+        name: '&aNext page →'
         action: |-
           page next
           icons refresh
           menu title update
   '<':
     material: black stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
     lore: '{{page current}} / {{page max}}'
     sub:
       - if: not page isFirst
         material: cyan stained glass pane
-        name: '<aqua>← Previous page'
+        name: '&b← Previous page'
         action: |-
           page previous
           icons refresh

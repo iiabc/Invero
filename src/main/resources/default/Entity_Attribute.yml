@@ -27,7 +27,7 @@ items:
   'X':
     material: lever
     name: |-
-      <#339999>{{&activator_entity_name}}
+      &{#339999}{{&activator_entity_name}}
     lore: |-
       &r
       &8· Name: &f{{&activator_entity_name}}

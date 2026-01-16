@@ -10,7 +10,7 @@ items:
     material: gray stained glass pane
   'X':
     material: sign
-    name: '<gold>Sign Input'
+    name: '&6Sign Input'
     #
     # 捕获器是一个 JsonObject 的结构动作，类似与配置级的 IF THEN ELSE 那种
     # 捕获完成后会自动重新打开菜单
@@ -40,7 +40,7 @@ items:
         tell "?"
   'Y':
     material: paper
-    name: '<green>Chat Input'
+    name: '&aChat Input'
     # 下文由 copilot 生成，或有谬误
     action:
       # 捕获的内容会作为变量存在于菜单语境中，这里设置变量名为 custom_tag_chat

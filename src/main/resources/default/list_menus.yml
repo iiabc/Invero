@@ -1,4 +1,4 @@
-title: 'Menus <black>[{{page get}}/{{page max}}]'
+title: 'Menus &0[{{page get}}/{{page max}}]'
 
 layout: |-
   ####*####
@@ -27,7 +27,7 @@ generator:
     ]
   output:
     material: paper
-    name: '<green><bold>{{&element_id}}'
+    name: '&a&l{{&element_id}}'
     lore: |-
       &r
       &8· &fRows: &a{{element *rows}}
@@ -46,14 +46,14 @@ generator:
 icons:
   '#':
     material: green stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
   '|':
     material: gray stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
 
   '*':
     material: sign
-    name: '<gold>Elements Filter'
+    name: '&6Elements Filter'
     lore: |-
       &r
       &7Filter: &e{{&filter}}
@@ -68,24 +68,24 @@ icons:
 
   '>':
     material: black stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
     lore: '{{page current}} / {{page max}}'
     sub:
       - if: not page isLast
         material: lime stained glass pane
-        name: '<green>Next page →'
+        name: '&aNext page →'
         action: |-
           page next
           icons refresh
           menu title update
   '<':
     material: black stained glass pane
-    name: '<dark_gray>...'
+    name: '&8...'
     lore: '{{page current}} / {{page max}}'
     sub:
       - if: not page isFirst
         material: cyan stained glass pane
-        name: '<aqua>← Previous page'
+        name: '&b← Previous page'
         action: |-
           page previous
           icons refresh
