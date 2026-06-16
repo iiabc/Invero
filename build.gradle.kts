@@ -96,8 +96,8 @@ dependencies {
     compileOnly("com.github.LoneDev6:API-ItemsAdder:3.6.3-beta-14")
 
     // CraftEngine
-    compileOnly("net.momirealms:craft-engine-core:0.0.22") { isTransitive = false }
-    compileOnly("net.momirealms:craft-engine-bukkit:0.0.22") { isTransitive = false }
+    compileOnly("net.momirealms:craft-engine-core:26.6.1") { isTransitive = false }
+    compileOnly("net.momirealms:craft-engine-bukkit:26.6.1") { isTransitive = false }
 
     // MMOItems
     compileOnly("io.lumine:MythicLib-dist:1.6.2-SNAPSHOT") { isTransitive = false } // Required by MMOItems API
